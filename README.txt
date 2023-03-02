@@ -3,7 +3,8 @@
 o In the application Blogspot
 1) CRUD methods including search method
 2) Turbo Frame and Turbo streams
-
+4) Authentication using Devise gem 
+3) Authorization using PUNDIT gem.
 
 o In the application BookReview I have implemented
 1) Turbo Frame and Turbo streams

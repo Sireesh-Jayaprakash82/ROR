@@ -26,6 +26,9 @@ table{
 </style>
 <div class="container-fluid">
   <center><h1><b><u><i>Blogs World </i></u></b></h1></center>
+  <% k = current_user&.admin? %>
+  <% k.to_s %>
+  <center>Admin Status : <h1><%= k.upcase %> </h1></center>
   <br><br><br><br><br>
   <% count = 0 %> 
   <%

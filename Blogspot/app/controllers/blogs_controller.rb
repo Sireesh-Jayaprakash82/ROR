@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :find_blog, only: [:show, :edit, :update, :destroy]
+  # before_action :authorize_user, except: %i[index, show]
   skip_before_action :verify_authenticity_token
   def index
     @blog = Blog.order(created_at: :desc)
@@ -12,6 +13,7 @@ class BlogsController < ApplicationController
 
   def create
     @blog = current_user.blogs.build(blog_params)
+    authorize @blog 
     if @blog.save
     render turbo_stream: 
       [                
@@ -74,4 +76,8 @@ class BlogsController < ApplicationController
     def find_blog
       @blog = Blog.find(params[:id])
     end
+
+    # def authorize_user
+    #   authorize @blog 
+    # end
 end
