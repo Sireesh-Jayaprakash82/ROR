@@ -1,0 +1,10 @@
+<% arr = Array.new %>
+<% if user_signed_in? %>
+    <h1> Hi <%= current_user.email %> </h1>
+    <% Product.all.each do |p| %>
+        <h3><% arr.append(p.name) %></h1>
+    <% end %>
+    <%= arr.uniq! %>
+<% else %>
+    <h2> Not Signed In </h2>
+<% end %>

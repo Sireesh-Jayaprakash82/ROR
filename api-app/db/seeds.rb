@@ -8,4 +8,11 @@
     { name: "Computer", brand: "Electronic Gadget", price_range: "Gaming" },
     { name: "Laptop Bag", brand: "Protection Sling", price_range: "High-end" },
     ])
+User.first_or_create([
+                  { email: '123@gmail.com',
+                    password: '12345678',
+                    password_confirmation: '12345678',
+                    role: User.roles[:admin]
+                  } 
+                  ])
 #   Character.create(name: "Luke", movie: movies.first)

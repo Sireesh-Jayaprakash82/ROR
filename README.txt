@@ -23,3 +23,8 @@ o In the application Bookapp
 o In the application api-app
 1) Is a simple application which renders data in the form of json.
 2)  I used postman to check the data sent over the api to get and post data.
+
+o In the application jwt_api
+1) Created a JWT token to a api application using the jwt gem.
+2) Scaffolded a basic model and CRUD operations for it.
+3) Used POSTMAN to authenticate user using the JWT token.

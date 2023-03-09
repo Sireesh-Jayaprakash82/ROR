@@ -1,10 +1,11 @@
-class Api::V1::ProductsController < ApplicationController
+class Api::V1::ProductsController < ActionController::API
   def index
     @product = Product.all
     render json: @product, status:200
   end
 
   def show
+
     @product = Product.find_by(id: params[:id])
     if @product
       render json: @product, status: 200
@@ -20,6 +21,10 @@ class Api::V1::ProductsController < ApplicationController
     else
       render json: {error: "Not created"}
     end
+  end
+
+  def destroy
+
   end
 
   private
