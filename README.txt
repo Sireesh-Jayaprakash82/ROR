@@ -28,3 +28,4 @@ o In the application jwt_api
 1) Created a JWT token to a api application using the jwt gem.
 2) Scaffolded a basic model and CRUD operations for it.
 3) Used POSTMAN to authenticate user using the JWT token.
+4) Implemented Active model Serialization and returned user attributes.
