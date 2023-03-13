@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  validates :email, uniqueness: true
   rolify
   has_many :blogs
   # Include default devise modules. Others available are:
