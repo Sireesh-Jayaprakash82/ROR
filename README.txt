@@ -29,3 +29,7 @@ o In the application jwt_api
 2) Scaffolded a basic model and CRUD operations for it.
 3) Used POSTMAN to authenticate user using the JWT token.
 4) Implemented Active model Serialization and returned user attributes.
+
+o In the application testapp
+1) Implemeted minitest for intgeration test.
+2) Implemented system test
